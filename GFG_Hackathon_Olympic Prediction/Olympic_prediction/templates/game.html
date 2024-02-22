@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+
+</style> 
+{% endblock style %}  
+{% block body %} 
+<div class="container ">
+
+  <div class="card">
+    <div class="card-body">
+      <h5>Games in Olympics</h5>
+      <ul>
+        {% for athlete in Sports_Types %}
+            <li>
+              {{ athlete }}
+            </li>
+        {% endfor %}
+
+        </ul>
+    </div>
+  </div>
+
+</div>
+
+{% endblock body %}  

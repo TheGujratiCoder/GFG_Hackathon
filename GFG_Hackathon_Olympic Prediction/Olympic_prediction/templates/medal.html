@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+
+</style> 
+{% endblock style %}  
+{% block body %} 
+<div class="container">
+
+     <h2>Predict Medal</h2>
+     <form method="post" class="form-group">
+          {% csrf_token %}
+          <label for="discipline_title" class="form-label">Discipline Title:</label>
+          <select id="discipline_title" name="discipline_title" class="form-control">
+               <option value="Curling">Curling</option>
+               <!-- Add other options here -->
+          </select>
+
+          <label for="event_gender" class="form-label">Event Gender:</label>
+          <select id="event_gender" name="event_gender" class="form-control">
+               <option value="Mixed">Mixed</option>
+               <!-- Add other options here -->
+          </select>
+
+          <label for="participant_type" class="form-label">Participant Type:</label>
+          <select id="participant_type" name="participant_type" class="form-control">
+               <option value="GameTeam">GameTeam</option>
+               <!-- Add other options here -->
+          </select>
+
+          <button type="submit" class="btn btn-primary mt-3">Predict</button>
+     </form>
+
+</div>
+{% endblock body %}  

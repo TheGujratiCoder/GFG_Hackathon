@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+
+</style> 
+{% endblock style %}  
+{% block body %} 
+<!--  Model training and evaluation using Random Forest -->
+<div class="container home">
+  <div class="card">
+    <div class="card-body">
+      <center>
+      <h5> USING NUERAL NETWORKS MODEL</h5>
+      </center>
+      <hr>
+      <ul>
+        <div class="row ">
+          <div class="col">
+            <h5>y_test</h5>
+            {% for c in t %}
+            <li>
+              {{ c }}
+            </li>
+            {% endfor %}
+
+
+          </div>
+          <div class="col">
+            <h5>y_pred</h5>
+            {% for fr in p %}
+            <li>
+              {{ fr }}
+            </li>
+            {% endfor %}
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock body %}  

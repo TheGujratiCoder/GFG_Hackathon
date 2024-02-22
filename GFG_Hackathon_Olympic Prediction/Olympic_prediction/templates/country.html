@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+  .home {
+    margin: auto;
+    top: 5rem;
+  }
+</style>
+{% endblock style %}
+{% block body %}
+
+<div class="container home">
+  <div class="card">
+    <div class="card-body">
+      <center>
+        <h5>Countrys in Olympics with Frequency</h5>
+      </center>
+      <ul>
+        <div class="row ">
+          <div class="col">
+            <h5>Country</h5>
+            {% for c in c %}
+            <li>
+              {{ c }}
+            </li>
+            {% endfor %}
+
+
+          </div>
+          <div class="col">
+            <h5>Frequency</h5>
+            {% for fr in f %}
+            <li>
+              {{ fr }}
+            </li>
+            {% endfor %}
+          </div>
+        </div>
+
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock body %}

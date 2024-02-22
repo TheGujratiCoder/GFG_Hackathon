@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:ital,wght@1,900&display=swap"
+  rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+   /* Increase specificity or use !important */
+   *{
+      font-family: 'Baloo Bhai 2', cursive;
+   }
+   .nav-item:hover a.nav-link {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 254, 254);
+        /* border-radius: 5%; */
+   }
+   .bl {
+        margin-top: 10px;
+        color: black;
+   }
+   
+    /* font-family: 'Baloo Bhai 2', cursive;
+  font-family: 'Montserrat', sans-serif; */
+  .footer {
+      /* font-family: 'Montserrat', sans-serif; */
+      text-align: center;
+      padding: 10px;
+      background-color: #020202;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+
+  </style>
+  {% block style %} {% endblock style %}  
+
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active bl" aria-current="page" href="../#" >OLYMPIC PREDICTION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bl" href="https://olympics.com/en/"> VISIT OLYMPIC WEBSITE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bl" href="about">ABOUT</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+  {% block body %} {% endblock body %}  
+  
+  <footer class="footer bg-dark bg-cover ">
+     <div class="container"> 
+       <span class="bolder" style="color: rgb(0, 0, 0); font-size: 20px;">&copy; 2023 2023 OLYMPIC PRIDICTION</span>
+       <br>
+       <span class="bolder" style="color: rgb(0, 0, 0); font-size: 18px;"><a href="https://www.geeksforgeeks.org/geek-olympics-2023" style="color: rgb(0, 0, 0);">GFG Geek-Olympics-HACKATHON 2023</a></span>
+
+     </div>
+   </footer>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</html>
